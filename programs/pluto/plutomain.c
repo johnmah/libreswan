@@ -844,9 +844,9 @@ int main(int argc, char **argv)
 			log_to_file_desired = TRUE;
 			continue;
 
-        case OPT_LOG_EXCHANGE_TIMEOUT_IP:   /* --log-exchange-timeout-ip */
-            log_exchange_timeout_ip = TRUE;
-            continue;
+		case OPT_LOG_EXCHANGE_TIMEOUT_IP:   /* --log-exchange-timeout-ip */
+			log_exchange_timeout_ip = TRUE;
+			continue;
 
 #ifdef USE_DNSSEC
 		case OPT_DNSSEC_ROOTKEY_FILE:	/* --dnssec-rootkey-file */
