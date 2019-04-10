@@ -119,7 +119,7 @@ static int ocsp_cache_size = OCSP_DEFAULT_CACHE_SIZE;
 static int ocsp_cache_min_age = OCSP_DEFAULT_CACHE_MIN_AGE;
 static int ocsp_cache_max_age = OCSP_DEFAULT_CACHE_MAX_AGE;
 
-static bool log_exchange_timeout_ip = FALSE;
+bool log_exchange_timeout_ip = FALSE;
 
 static void free_pluto_main(void)
 {

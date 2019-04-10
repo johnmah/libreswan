@@ -64,4 +64,6 @@ void init_oneshot_timer(enum event_type type, global_timer_cb *cb);
 void schedule_oneshot_timer(enum event_type type, deltatime_t delay);
 void deschedule_oneshot_timer(enum event_type type);
 
+extern bool log_exchange_timeout_ip;
+
 #endif /* _TIMER_H */

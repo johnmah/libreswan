@@ -554,7 +554,7 @@ static void timer_event_cb(evutil_socket_t fd UNUSED, const short event UNUSED, 
 		if (log_exchange_timeout_ip && st->st_state == STATE_PARENT_R1) {
 			ip_endpoint_buf b;
 			libreswan_log("deleting incomplete state after "PRI_DELTATIME" seconds from address %s",
-				pri_deltatime(timeout), str_endpoint(st->st_remoteaddr,&b));
+				pri_deltatime(timeout), str_endpoint(&st->st_remoteaddr,&b));
 		} else {
 			libreswan_log("deleting incomplete state after "PRI_DELTATIME" seconds",
 				pri_deltatime(timeout));
